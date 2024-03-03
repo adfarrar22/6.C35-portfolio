@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 2</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h4>Navigation Bar</h4>
+        </div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a class='active' href="pages/A2.html">Assignment 2</a></li>
+            <li><a href="pages/A3.html">Assignment 3</a></li>
+            <li><a href="pages/A4.html">Assignment 4</a></li>
+
+        </ul>
+    </nav>
+	<header>
+		<h1>
+			<small>Assignment 2</small>
+			Exploratory Data Analysis
+		</h1>
+
+		<p>
+			<strong>Allegra Farrar</strong> — <em>adfarrar@mit.edu</em>
+		</p>
+	</header>
+	<main>
+		<section>
+			<h2>Subtheme: Upzoning</h2>
+
+			<h3>Overall Analysis Questions</h3>
+			<ol>
+				<li>What are the impacts of upzoning on climate sustainability, particularly with respect to coastal density?</li>
+					<p>
+						My research investigating the formation of tropical cyclones (i.e., hurricanes) has revealed many concerns facing coastal communities. It is known that low-income, marginalized communities tend to form (or get pushed) towards the coast. Additionally, coastal regions tend to be the most densely populated regions due to their proximity to tourism, and ocean resources along with their access to imports of goods and services, and higher job markets. However, concerns such as coastal erosion and sea level rise are wearing down the ecological infrastructure and the prospect of growing coastal populations creates greater strain (see “Climate Change Impacts on Coasts” by the EPA).
+					</p>
+					<p>
+						With this research question, I seek to explore how population density impacts the coast of MA and if there’s a case against up-zoning in already densely populated regions. While MA is not impacted by hurricane season, the state, and northeast region, are highly impacted by intense winter storms, some manifesting into Nor’esaters. These storms are a particular challenge for neighborhoods near and in the city given the compact set-up of buildings and rodes. Over time, this wears down infrastructures to the point of needing repairs that some communities may not be able to afford (enlarged potholes, damaged roofs, frozen pipes, etc.). As a result, I would like to explore how the wealth gap among MA municipalities impacts regional density and therefore coastal strain.
+					</p>
+				<li>What are the demographic implications of "missing middle" housing in MA municipals? Are there clear connections between municipals with more "middle housing" and higher minority populations?</li>
+					<p>
+						I grew up in “middle” housing in an MA suburb (Canton, MA). My family originally lived in a Boston metro city (Hyde Park), but the public school education was poor and my parents could not afford private schooling. My parents found an 8-family condominium complex, each home two stories with two bedrooms and baths, and residing in the middle of a residential neighborhood. The apartment was owned by a local landlord who charged a modest monthly rent. However, after 20+ years of renting the same condo, my parents have yet to afford a home in the Canton suburbs. In 2020 the condo was taken over by corporate management who increased the rent cost, significantly changing the demographic of residents. In its current state, my parents would not have been able to afford the condo with two young children. For the most part, the town of Canton is a primarily white suburb. However, in the years growing up there, I witnessed first-hand that non-white Canton residents were often confined to distinct locations with multi-family housing (apartments, condos, etc.) - myself included. Even with these accommodations, the town continues to maintain its primarily white demographic who dominate as homeowners of this suburb.
+					</p>
+					<p>
+						I share this story because the state of MA is widely known for its segregated housing tactics. The Washington Post article describes “missing middle” housing as the solution for accommodating multi-family housing demands in cities and near-city suburbs; however, the approach to middle housing accommodation looks very different in different neighborhoods, especially those of MA. While some prefer certain neighborhoods over others, many simply do not have the choice or means to reside anywhere other than costly or worn-down cities. This leaves most of the suburbs to the white upper and middle class. Using the provided data, I would like to identify some of the demographic trends that correlate to zoning procedures and demonstrate how the disproportionality of these trends could be used to discourage home ownership in predominantly white municipals.
+					</p>
+				<li> How does upzoning (or the lack thereof in Boston suburbs) impact sustainable/economic living, particularly for young adults and young families?</li>
+					<p>
+						From experience being a student in the Boston/Cambridge area, income goes a lot shorter the closer you live to the city. Costs such as metered parking, requiring public transportation to avoid the hassle of finding parking and the higher insurance rates of the city, high rent costs for apartments that provide adequate accommodations, higher priced grocery stores, etc. – the list goes on. While the city of Boston has an abundance of apartment buildings, the cost of monthly rent is equivalent to some suburban mortgages. Additionally, many of the younger adult population are required to live in or near the city due to school commitments, demanding work schedules, and lack of adequate transportation.
+					</p>
+					<p>
+						Through the visual representations, I would like to explore if suburbs intentionally have high single-family zoning requirements to force a larger population into the city. Is this a strategic means for ensuring monetary input to the city of Boston and surrounding areas and will this have adverse effects on the economic sustainability of the millennial/gen-z population? Even for municipals like Sommerville and even certain parts of Cambridge that have middle housing like smaller apartment buildings and three-family homes, is the cost of living too high to justify renting over home-owning?
+					</p>
+			</ol>
+		</section>
+
+		<section>
+			<h2>Discoveries & Insights</h2>
+
+			<figure>
+				<img src="../images/coastal_density_1.png" alt="" />
+				<figcaption>
+					This visualization applies a color mapping on population size for each municipality provided in the dataset. The municipals surrounding the coast tend to have denser populations with Boston being the largest of them all. To better represent the other municipals, given how much of an outlier Boston is in the dataset, I altered the color scaling decreasing the max to reflect greater than or equal to 200,000 persons and shifting the center down to 50,000 persons which better reflects the median of the dataset. This visualization sparked the question: is the density connected to zoning allocations?
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../images/coastal_density_50+.png" alt="" />
+				<figcaption>
+					To understand how the population density tracks against the percentage of single-family zoning, I added a filter that only showed the municipals with 50% or more single-family zoning. I did the same in the following figure but for municipals with 50% or less single-family zoning.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../images/coastal_density_50-.png" alt="" />
+				<figcaption>
+					The above two images reflect that there is a clear connection between population density and the ability to construct multi-family homes. In Figure 2 we see that the inland suburbs surrounding the municipals on the coast are where the majority of single-family zoning lies. This brings up the concern that these zoning restrictions may in fact be pushing MA residents further into the coast given the lack of housing options other than single-family homes. This triggered the follow-up question of how income may be impacting this distribution.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../images/coastal_income.png" alt="" />
+				<figcaption>
+					In this figure, I explore how high-income households pair with the percentage of single-family zones across the municipalities. To do so, I summed up the households making over 50K a year and turned this into a percentage. I then represented the percentage as a color array and the percent of single-family zones as a dot sizing. This representation demonstrates that many of the inland municipals tend to contain a high-income demographic. This shows that there is a clear wealth gap impacting the population density that’s concentrated on the coast.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../images/low-income_to_single-family_zoning.png" alt="" />
+				<figcaption>
+					To explore question 2, I wanted to dive into the ethnic representations within the municipalities and how this compares to zoning. For most of my life as an MA resident, I noticed the strict segregation among towns, especially for suburbs vs. cities. The first image shows a packed bubble map of municipalities with the size representing the percentage of single-family zoning and the color showing the percentage of the population making under 50K. For this work, I am constituting this as “low-income”. From this representation, I noticed that there were three municipalities with a high percentage of low-income and a high percentage of single-family zoning - Peabody, Lynn, and Salem. The following figure explores the demographics of these municipalities further.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../images/low-income_anomalies.png" alt="" />
+				<figcaption>
+					Following up on the previous figure, this figure explores municipalities that go against the trend of low-income and low single-family zoning. In comparing these municipalities, I looked into the different ethnic demographics residing in these towns. As shown in the figure, each of these “anomaly” towns have a white population greater than 50% with Peabody hitting 84% and Salem hitting 78%. This made me want to explore further how ethnic demographics play a role in zoning and income stats.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../images/low-income_minority_comparison.png" alt="" />
+				<figcaption>
+					This figure does a comparison of low-income households to single-family zoning with an added dimension of the percent of non-white residents for each municipality. To get the percentage of non-white residents, I summed over all other ethnic groups provided in the dataset and generated an average. This percentage denotes the “housing minority”. The percentage is represented by the color array and the total households available is represented by the size of each bubble. I found this figure to be very compelling given that we can see not only the concentration of the housing minority but also what zoning regions these minorities tend to reside in. Except for the Randolph anomaly, we can see that the majority of non-white ethnic groups tend to reside in lower percentage single-family zones. Going back to the coastal density mapping, we know that this means many of these ethnic groups are residing on or near the coast. 
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../images/family_household_to_single-family_zoning.png" alt="" />
+				<figcaption>
+					Based on the third research question, I thought it important to compare how household numbers compare to single-family zoning. Typically young adults, families/couples are not seeking to purchase homes and are concentrated in areas with multi-family housing options. This visualization does an initial pass to see if this assumption is true by concentrating on high percentage single-family homes. Surprisingly, several 2-person households reside in regions with high percentage of single-family zoning.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../images/family_household_to_multi-family_zoning.png" alt="" />
+				<figcaption>
+					This figure follows up on the previous figure to explore the low percentage of single-family zoning municipalities. Without surprise, Boston constituted the largest amount of housing options for each household amount. This trend sparked interest in exploring how household income also impacts the concentration of where people are residing.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../images/incomes_to_multi-family_zoning.png" alt="" />
+				<figcaption>
+					The final figure shows a bar chart of household yearly income starting with under 10K and going to over 200K. I plotted this figure for municipalities with low percentages of single-family zoning to see how income is impacting zoning choices. I noticed for all income brackets, Boston, Cambridge and Somerville were the top three municipalities. I also noticed that total family households to both very high-income and very low-income households were concentrated in the Boston area. The color progression also shows that most of the younger population is following this trend as well.
+				</figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<h2>Summary</h2>
+
+			<p>This exercise was quite challenging. I developed my questions before exploring the dataset and ran into several challenges given its limited nature. I had to perform several calculations and summations over fields to better reflect information relevant to the research questions I wanted to explore. Some interesting discoveries were made such as the concentration of high-percent single-family zoning municipals on the outskirts of the coasts and the connection of non-white (often housing marginalized) groups to municipals with low single-family zoning and households with less than 50K income. While working with a limited dataset, I was unable to visually represent many trends that I have experienced throughout my life as an MA resident. This exploration also sparked a lot of follow-up questions, such as how these trends compare over time, and how concerns of school districts and access to activities play a role in where people choose to settle.</p>
+			<p> From a visual perspective, it was interesting to see how the use of color, shapes, plot choice, etc. can drastically change the overall effect the visualization has on telling a story. For example, in the plot where I compared low-income households to family zoning based on Non-white ethnicities, I purposely chose a brown color progression to explore the impacts of “emotional visualizations” that were covered in the second graduate reading assignment. I found this to be a pivotal example of how changing a subtle detail within the visualization can heavily impact how it captures the viewer’s attention. </p>
+		</section>
+	</main>
+</body>
+</html>

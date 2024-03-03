@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h4>Navigation Bar</h4>
+        </div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a class='active' href="pages/A2.html">Assignment 2</a></li>
+            <li><a href="pages/A3.html">Assignment 3</a></li>
+            <li><a href="pages/A4.html">Assignment 4</a></li>
+
+        </ul>
+    </nav>
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Design
+		</h1>
+
+		<p>
+			<strong>Your Name</strong> — <em>Your MIT Email Address</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Phase One: Sketching Visualizations</h2>
+
+      <figure>
+                <img src="../images/A3_Q1.jpg" alt="" />
+				<figcaption>
+					At what rate is the female lifespan outpacing that of male?
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 1:
+			</p>
+
+			<ul>
+				<li>I used pie charts in this visualization to reflect the shift in dominance between male and female population sizes across the ages for each year. The progression of pie charts demonstrated the swift takeover of female dominance in the 2000s while the 1900s were slightly more male-dominated in age ranges. </li>
+				<li>I applied color to the pie chart to provide an eye-catching visual effect to the representation. I purposely relied on stereotypical colors representing males and females 1) to grab the viewer's attention and 2) to play into the oversimplified representation of gender in the dataset.</li>
+				<li>Based on the trends I saw across the ages for both Males and Females, I thought it best to condense them into buckets of 10 years by performing an average making 9 pie charts for each century.</li>
+			</ul>
+
+      <figure>
+				<img src="../images/A3_Q2.jpg" alt="" />
+				<figcaption>
+                    What sex dominates the change in lifespan over the century?
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 2:
+			</p>
+
+			<ul>
+				<li>Based on the question, I thought a graph representing a rate of change was best suited. I placed the age ranges on the x-axis and the number of people on the y-axis. I then plotted a continuous line to track how the number of people was changing for each year.</li>
+				<li>For this visualization, I wanted to present a typical line chart with a twist. Borrowing from the color representation of gender dominance in Q1, I chose to shade each region of the curve based on it being male-dominated (blue), female-dominated (pink), or equivalent (purple). What resulted was an interesting conclusion that the primary female dominance across ages 25 is directly correlated with a significant increase in population size.</li>
+				<li>The Q2 visualization was challenging since the population sizes overall are in vastly different ranges. I added two y-axes to support this and divided the values by 106 to simplify the axes. For future iterations, this visualization could benefit from using a log scale.</li>
+			</ul>
+
+      <figure>
+				<img src="../images/A3_Q3.jpg" alt="" />
+				<figcaption>
+                    What is the trend of population density with respect to age range.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 3:
+			</p>
+
+			<ul>
+				<li>Unlike Q2, I placed population size on the x-axis for Q3 because I thought this was best suited to represent a progression trend. I used a bar chart here to show a more continuous spread of the data for each age range. I also grouped the ages into 10 years as opposed to 5 by averaging the numbers.</li>
+				<li>Because I’m trying to show population density, I added numbers for males and females within each age range. </li>
+				<li>I eliminated the use of color here and relied on shading to better represent the changes in population density. The shading is concerning how much of a percent decrease 1900 populations are from 2000 for each age range.</li>
+			</ul>
+
+      <h3>Reflection</h3>
+
+      <p>
+        Across the visualizations, I tried to experiment with shapes, color, shading, and axis placement. For example, while both Q2 and Q3 rely on representations of quantities along an axis, I chose to place population size on the y-axis for Q2 and the x-axis for Q3. I wanted the Q2 visualization to represent more of a rate of change while having the Q3 visualization show more of a progression trend. I also experimented with the representation of the population as a quantity by using pie charts in the Q2 visualization. I thought this visualization presented more comprehensive than I was expecting; the use of the pie charts visually demonstrating a percentage of a whole evidenced that the female population increases with larger age groups. Based on this exploration of the male vs. female population change in Q1, I thought it would be interesting to incorporate color in the Q2 visualization to show what points along the age ranges are male- or female-dominated. When choosing colors for these visuals, I contemplated the idea of relying on conventional colors to represent male vs female. Ultimately, I decided to implement the color schemes to play into the stereotyping of the gender breakdown. Contrary to Q1 and Q2, I chose not to use color for Q3. I thought it would be interesting to experiment with shading techniques in this visualization so I chose to darken the shading for larger percent increases in population size. I remember from the first graduate reading assignment by Donald Norman, there’s a map figure on page 18 that showed the percentage of homes that exceed the recommended level of radon. My initial thought upon the first encounter with this visualization was that it could benefit from color, but the paper went on to explain that shading does a better job of conveying density here than color would. This completely shifted my perspective on how to approach the visualization process, so I wanted to incorporate this technique here. In the next phase, I would like to perform calculations on percent increases to explore more of the overall population shift. I think it would be interesting to combine elements from Q1 and Q3 to make more inferences about the longevity of the female population.
+      </p>
+
+		</section>
+
+		<section>
+			<h2>Phase Two: Final Design</h2>
+
+			<figure>
+				<img src="../images/A3_tableau.png" alt="" />
+				<figcaption>
+				    What is the trend in population growth within each age range from 1900 to 2000?
+				</figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<h2>Design Process & Design Decisions</h2>
+
+			<p>
+                Based on the questions explored for phase one of this assignment, I knew I wanted to look into Q3 which asks “What is the trend of population growth within each age range from 1900 to 2000?” while incorporating elements from the other figures in Q1 and Q2. For this visualization, I wanted to demonstrate the drastic increase in population size from 1900 to 2000, particularly between the ages of 30 to 60 and 60 to 90. I did some digging on the potential social factors underscoring this vast change in population and a couple of things stood out. Most importantly, the medical field drastically improved over the century. Resources such as vaccines, advanced medical instruments, scientific advancements, etc. greatly impacted the lifespans and mortality rates. Secondly, I noticed the greatest distinction between population size occurs in the ages ranging from 30-40. The baby boom post World War II had a substantial impact on population size placing those who were born at the time in this exact age bracket during the year 2000. I wanted to emphasize these points in the dataset by focusing on representing the key distinctions in population sizes across the century. 
+            </p>
+            <p>
+                I first created this visualization by placing “People” on the x-axis and plotting for each sex (color) and each decade (shape). This felt like an information overload, so I tried some data transformation to improve the data representation of the question. I started by calculating the percent increase from 1900 to 2000 for each age and sex represented. This reduced the number of data points for each age in the visualization from 4 (2 for each year) to 2 while still demonstrating an overall increase in the number of people for each age across the century. Secondly, I decided to put the y-axis on a log scale to improve how the spread of percent increases appeared. Log scales in charts or graphs are particularly useful tools for visualizing significant percent differences between data points and support this visualization well by evening the spread of the data. Finally, I wanted to incorporate elements of color and size for added distinctions in the dataset. I decided to stick with the pink and blue color scheme allocating points for the female and male sexes, respectively, to call attention to the binary exclusive nature of the dataset. I also felt the colors were different enough in hue to properly distinguish between the two categories. The use of these colors is colloquial enough to eliminate the need for the viewer to consistently check the legend to remind them what each color represents. Finally, I wanted to add an element to represent the general population density for each age category. To do so, I summed the “People” entry for both centuries and added that as a size marker for each point. While this doesn’t distinguish between the two years, we can distinguish the relative density between the two genders.
+            </p>
+
+
+      <h3>Reflection</h3>
+
+      <p>
+        Overall, I noticed it to be quite challenging to reflect the creativity in phase two vs. phase one. In phase two, I butted up against several challenges of proper formatting in Tableau along with the software’s limitations. For example, in phase one, I answered Q3  by using a bar chart with shading to represent how the population sizes were changing between the centuries. I realized this would be challenging to do in the software, so I reverted to the use of color and transformed the data into percent increases to reflect the extent to which populations within each age range were increasing. Without the use of shading, I realized the bar chat was less effective; however, implementing the scatter plot seemed to represent the percent increases better. While the process of sketching the visualizations vs. encoding the visualization using the Tableau software were significantly different experiences, I think the sketching improved how I approached the visualization. Being able to freely represent the data without limitations of software capability (or my knowledge of the software’s capability), I could be more creative and comprehensive with design choices that answered the questions. Also, the process of coming up with multiple questions to answer with different visualization strategies strongly supported the design choices in phase two. I leaned into elements I used for all three visualizations to support constructing the visualization for phase two. Ultimately, I thought the prototyping process made it easier to think through formatting in Tableau, streamlining the process in the end.
+      </p>
+		</section>
+	</main>
+</body>
+</html>
