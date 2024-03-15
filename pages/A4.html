@@ -30,15 +30,16 @@
 	</header>
 
 	<main>
-    <h2>Proposition: [STATE PROPOSITION]</h2>
+    <h2>Proposition: Globally, we need to do more to reduce the detrimental effect of climate change.</h2>
+	<h2>Counter Proposition: Collectively, the world is successfully reducing the effects of climate change.</h2>
 
 		<section>
       <h3>FOR the Proposition</h3>
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="../images/A4_image1.png" alt="" />
 				<figcaption>
-					BRIEF CAPTION HERE.
+					Persuasive Visualization FOR the need of better initiatives to combat climate change.
 				</figcaption>
 			</figure>
 
@@ -47,9 +48,10 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>[SCORE: -0.5]. Map – For the case of climate change, I thought using a map representation would be effective at forming a persuasive argument. For the map, I used the Climate-driven INFORM Risk dataset and concatenated each country's risk levels to generate a color progression of increasing risk across each country for the most recent year available (2022). I noticed two things 1) the filled color map wasn’t striking me the way I had hoped (even with the orange/red hues) and 2) I needed more data than from the most recent year to underscore the argument. To address the first concern, I removed the color fill and applied density makers - this gave the striking effect I was going for. I then created a calculated field summing the data across the last five years which darkened the densities throughout the map.</li>
+				<li>[SCORE: -1]. Eco-Tax Sub Figure – While the map was the main attraction for this argument, I added two other smaller visualizations to emphasize supporting themes. This first is a representation of environmental tax. The IMF offered several datasets on different aspects of climate so I used an additional dataset on climate mitigation data. I then modified this dataset by summing the “percent of GDP” values across countries in each continent. Plotting the economic tax as percent of GDP wasn’t giving me the persuasive effect I was looking for so I made two additional design decisions: 1) I summed the percentages across all the continents and 2) I selected the most recent year the demonstrated a decline in the eco-tax.</li>
+				<li>[SCORE: 1.5]. Natural Disasters Sub Figure – The second sub-visualization was based on the number of disaster types over the last year. The goal was to demonstrate an overall increase with time. The data reflected this increase for the most part, so I did not have to do much altering here. I chose to start with 1980 and represent the years in increments of 20 to show the widest spread of the trend.</li>
+				<li>[SCORE: -1]. Color use & organization – Originally, everything was in the standard Tableau formatting; however, after doing some digging on figures produced from Tableau, I realized there’s more effects I could add. I chose to apply a black background to the dashboard and put the map in dark mode to add an ominous effect. Constrasted with the white lettering and the consistent red coloring signaled to the “danger” aspect of the argument quite well.</li>
 			</ul>
     </section>
 
@@ -57,9 +59,9 @@
       <h3>AGAINST the Proposition</h3>
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="../images/A4_image2.png" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+          			Deceptive Visualization AGAINST the need to make serious improvement on combating climate change. 
 				</figcaption>
 			</figure>
 
@@ -68,16 +70,19 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>[SCORE: -1.5]. Color use & Organization – I relied heavily on green-blue cool tones to portray the figures for this argument. I felt this neutralized some of the trends making them come across as less glaring or disturbing. I also stuck with the standard white background in Tableau to add a lightness to the visualization as a means of distracting the viewer from any potential concerns in the trends. </li>
+				<li>[SCORE: -2]. Map – Instead of making the map the focal point here, I made the Eco-Tax chart the focal point and nested the map within that chart as a means of distracting the viewer from any glaring concerns on trends of large climate risks. I also did not specify what those risks are on purpose - words like “lack of coping” and “hazard and exposure” have inherently negative connotations which don’t support the argument. Additionally, using the green-blue color spead in concert with decreasing the size of the circles made the amounts of climate-driven concerns come across as smaller, which is very deceptive of what the actual data represents. </li>
+				<li>[SCORE: 0.5]. Eco-Tax Plot – I made a few alterations to this plot than what was used for the previous argument. While each plot uses the same dataset, I used an area chart here to signal that a large amount of GDP is being spend on Eco tax. Additionally, I incorporated more years to the representation to show an increase in trend, most notably the increase in taxes from 2014 to 2015. I did some researching and figured out the Paris Agreement was adopted in 2015 so I added an annotation to focus the readers attention on the stark increase and provide convincing background to support the overall  argument. I chose to leave off the years 2020 and 2021 to omit parts of the trend that are declining.</li>
+				<li>[SCORE: -2]. I decided to keep the subplot on natural disasters but made some alterations to persuade the reader that this trend was remaining consistent. I added a teal-blue color scale that made the amounts seem underwhelming. I also omitted the “Total” field that tallied all the disasters occurring in the year. I then used different years starting in 2000 and increasing in decadal increments to demonstrate years with the least amount of increase in natural disasters between them.</li>
 			</ul>
     </section>
 
     <section>
       <h2>Final Reflection</h2>
 
-      <p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+      <p>Overall I found this assignment to be the most challenging of all the four. Not only having to represent the data, but think of design decisions that would adequately persuade the viewer towards accepting an argument was quite a challenge. To do this, I had to rely heavily on the data exploration phase. I went through at least 5 iterations of Tableau workbooks testing out what the data could show and what were the different ways I could represent it. Here is where I picked out trends in the data that could be altered for affective visualization purposes. I also spent a lot of time reworking the data in excel. This involved a series of transformations including summations, filtering based on continent (which involved tediously picking out each country for the respective continents), and reorganizing the data to get the plots I was looking for. The hardest of all the visualizations was the Economic Tax visualizations. I had to transform the data by filtering out the countries for each continent, summing over the percent GDP of Economic Tax for those respective countries, and (in a new worksheet) pasting those values with continent as the column header and year as the row header. In addition to this plot, I found working with multiple different datasets to also be quite challenging, but rewarding in terms of the final results I was able to produce. I started with the Adaptation type, INFORM risk dataset from the IMF website; however, after doing some initial data exploration, I realized I didn’t have quite enough information to properly make the argument I was going for. I then looked into the Mitigation datasets available and added data on Environmental Taxes. I thought this would add an interesting dimension of human action addressing climate change. What resulted were interesting trends of increases nd decreasaes in environmental taxes that I could exploit to support both arguments.</p>
+	  <p>While it was the most intriguing of the visualizations, I found the maps to be the most straightforward figures to produce. However, in choosing how I wanted to represent the data in the graph, I originally defaulted to a color fill that mapped the climate-driven risk index. However, this did not yield the effect I wasa looking for in terms of captivating a level of concern for argument 1. After looking at some climate map examples, I decided to switch to circle, where the size of the circle would represent the level of concern. Given the indexes were of similar values for most of the countries, the circles overlapped a lot taking away from the visual effect. I then switch to density circles where the darkness of the color represented how large the value was and this finally gave me the effect I was looking for. Working through this process with the map helped in deciding what additional figures, and design decisions within those figures would add to the persuasiveness of the arguments. I was truly shocked at how slight changes in color, scale values, and choices in categorizing the data significantly impacted the persuasiveness of the visualization for supporting the argument. Things as simple as changing the color density profile from red to green-blue demonstrated visualizations that almost appeared as if they were representing different datasets. Also, outside of choosing different year ranges, the choice in using an area graph for argument 2 versus a line graph for argument 1 of the Eco-Tax chart gave considerably different results in highlighting the data trends. I also made a conscious decision to use layman terms for both visualizations that would connect viewers of any background on the topic to the positions that were taken. </p>
+	  <p>I relied on some new techniques for this assignment to support the visual designs, one major technique was making use of the Dashboard function in Tableu. After referencing some Tableau examples I realized I could leverage the Dashboard function to add additional visualization types aside from the main visualization to make the argument more compelling. For the first argument in support of climate change concerns, I wanted the first impression of the visualization to feel alarming, not just in terms of color use but also in terms of orgnaization of the  multiple visualizations. While the map is the focal point, the sub-figures contain lots of annotations and markings adding to the viewable intricacy of the problem. I took a different approach for the argument against climate change concerns by using brighter calmer colors but also inlaying figures to reduce the intricacy of the visualizations. I thought that the less places the viewers eyes need to go, the less overwhelmed they’ll feel alluding to the unconcerned nature of the argument. Playing around with these features in the Dashboard settings really shifted my perspective on what is possible for performing persuasive arguments through visual tactics.</p>
     </section>
 	</main>
 </body>
